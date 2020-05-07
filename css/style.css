@@ -1,0 +1,253 @@
+/* Общие стили */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.dialogs-interface{
+    display: flex;
+    flex-flow: row;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 16px;
+    font-family: Roboto, Arial, sans-serif;
+    box-shadow: 3px 2px 3px 2px rgba(0, 0, 0, .1);
+}
+/* /Общие стили */
+
+/* Диалоги */
+.dialogs{
+    flex: .35;
+    display: flex;
+    flex-flow: column;
+    background-color: #019ad6;
+    color: #fff;
+}
+
+/* Шапка диалогов */
+.dialogs__header{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+
+.dialogs__header-toggle-menu{
+    font-size: 32px;
+    color: #fff;
+}
+
+.dialogs__header-search{
+    flex: .9;
+}
+
+.dialogs__header-search-field{
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #52a3db;
+    border: 0;
+    color: #fff;
+    width: 100%;
+    outline: #177aa3;
+}
+
+.dialogs__header-search-field::placeholder{
+    color: #fff;
+}
+/* /Шапка диалогов */
+
+/* Список диалогов */
+.dialogs__list{
+    padding-bottom: 10px;
+}
+
+.dialogs__list-item{
+    display: block;
+    padding: 15px 0;
+    color: #fff;
+    text-decoration: none;
+    transition: all linear .3s;
+    padding: 15px 25px;
+}
+
+.dialogs__list-item:hover,
+.dialogs__list-item_active{
+    background-color: #177aa3;
+}
+
+.dialogs__list-item-header{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.dialogs__list-item-last-message{
+    color: #e2ffff
+}
+/* /Список диалогов */
+
+/* /Диалоги */
+
+/* Отдельный диалог */
+.dialog-detailed{
+    flex: .65;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+/* Шапка диалога */
+.dialog-detailed__header{
+    padding: 25px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid #e8e8e8;
+}
+
+.dialog-detailed__header-heading{
+
+}
+
+.dialog-detailed__header-heading-title{
+    color: #576163;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.dialog-detailed__header-heading-ago{
+    color: #606163;
+}
+
+.dialog-detailed__header-icons{
+    display: flex;
+    align-items: center;
+    flex-basis: 65px;
+    justify-content: space-between;
+}
+
+.dialog-detailed__header-icons-icon{
+    font-size: 32px;
+    font-weight: 300;
+    color: #707578;
+    text-decoration: none;
+}
+/* /Шапка диалога */
+
+/* Сообщения диалога */
+.dialog-detailed__messages{
+    padding: 25px;
+}
+
+.dialog-detailed__messages-item:not(:first-child):not(:last-child){
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.dialog-detailed__messages-item-incoming{
+    text-align: left;
+}
+
+.dialog-detailed__messages-item-outgoing{
+    text-align: right;
+}
+
+.dialog-detailed__messages-item-incoming .dialog-detailed__messages-item-content{
+    background-color: #c4d4e1;
+}
+
+.dialog-detailed__messages-item-outgoing .dialog-detailed__messages-item-content{
+    background-color: #fff;
+}
+
+.dialog-detailed__messages-item-sent .dialog-detailed__messages-item-content::after{
+    font-family: FontAwesome;
+    content: "\f00c";
+    position: absolute;
+    right: 3px;
+    bottom: 3px;
+    font-size: 12px;
+}
+
+.dialog-detailed__messages-item-read .dialog-detailed__messages-item-content::before{
+    font-family: FontAwesome;
+    content: "\f00c";
+    position: absolute;
+    right: 7px;
+    bottom: 3px;
+    font-size: 12px;
+}
+
+.dialog-detailed__messages-item-read .dialog-detailed__messages-item-content::after{
+    font-family: FontAwesome;
+    content: "\f00c";
+    position: absolute;
+    right: 3px;
+    bottom: 3px;
+    font-size: 12px;
+}
+
+.dialog-detailed__messages-item-content{
+    display: inline-block;
+    padding: 15px 20px;
+    color: #576163;
+    box-shadow: 0 0 7px 3px rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    position: relative;
+}
+/* /Сообщения диалога */
+
+/* Новое сообщение */
+.dialog-detailed__new-message{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row;
+    padding: 25px;
+    color: #576163;
+    border-top: 4px solid #e8e8e8;
+}
+
+.dialog-detailed__new-message-icons{
+
+}
+
+.dialog-detailed__new-message-icons-icon{
+
+}
+
+.dialog-detailed__new-message-text{
+    flex: .9;
+}
+
+.dialog-detailed__new-message-text-textarea{
+    background: transparent;
+    border: 0;
+    resize: none;
+    width: 100%;
+    outline: none;
+}
+
+.dialog-detailed__new-message-send{
+
+}
+
+.dialog-detailed__new-message-send-icon{
+    font-size: 32px;
+    font-weight: 300;
+    color: #707578;
+    text-decoration: none;
+}
+/* /Новое сообщение */
+
+/* /Отдельный диалог */

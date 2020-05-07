@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Medchat Dialogs</title>
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <!-- Интерфейс диалогов -->
+            <div class="dialogs-interface">
+
+                <!-- Диалоги -->
+                <div class="dialogs">
+
+                    <!-- Шапка диалогов -->
+                    <div class="dialogs__header">
+                        <div class="dialogs__header-menu">
+                            <a href="#" class="dialogs__header-toggle-menu">
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="dialogs__header-search">
+                            <input class="dialogs__header-search-field" type="text" placeholder="Поиск">
+                        </div>
+                    </div>
+                    <!-- /Шапка диалогов -->
+
+                    <!-- Список диалогов -->
+                    <div class="dialogs__list">
+                        <a href="#" class="dialogs__list-item dialogs__list-item_active">
+                            <div class="dialogs__list-item-header">
+                                Диалог 1
+                            </div>
+                            <div class="dialogs__list-item-last-message">
+                                Вы: Операция проведена?
+                            </div>
+                        </a>
+                        <a href="#" class="dialogs__list-item">
+                            <div class="dialogs__list-item-header">
+                                Диалог 2
+                            </div>
+                            <div class="dialogs__list-item-last-message">
+                                Больной поступил
+                            </div>
+                        </a>
+                        <a href="#" class="dialogs__list-item">
+                            <div class="dialogs__list-item-header">
+                                Диалог 3
+                            </div>
+                            <div class="dialogs__list-item-last-message">
+                                Вы: Фотография
+                            </div>
+                        </a>
+                        <a href="#" class="dialogs__list-item">
+                            <div class="dialogs__list-item-header">
+                                Диалог 4
+                            </div>
+                            <div class="dialogs__list-item-last-message">
+                                Бла бла бла
+                            </div>
+                        </a>
+                        <a href="#" class="dialogs__list-item">
+                            <div class="dialogs__list-item-header">
+                                Диалог 5
+                            </div>
+                            <div class="dialogs__list-item-last-message">
+                                Бла бла бла
+                            </div>
+                        </a>
+                        <a href="#" class="dialogs__list-item">
+                            <div class="dialogs__list-item-header">
+                                Диалог 6
+                            </div>
+                            <div class="dialogs__list-item-last-message">
+                                Бла бла бла
+                            </div>
+                        </a>
+                        <a href="#" class="dialogs__list-item">
+                            <div class="dialogs__list-item-header">
+                                Диалог 7
+                            </div>
+                            <div class="dialogs__list-item-last-message">
+                                Бла бла бла
+                            </div>
+                        </a>
+                        <a href="#" class="dialogs__list-item">
+                            <div class="dialogs__list-item-header">
+                                Диалог 8
+                            </div>
+                            <div class="dialogs__list-item-last-message">
+                                Бла бла бла
+                            </div>
+                        </a>
+                        <a href="#" class="dialogs__list-item">
+                            <div class="dialogs__list-item-header">
+                                Диалог 9
+                            </div>
+                            <div class="dialogs__list-item-last-message">
+                                Бла бла бла
+                            </div>
+                        </a>
+                    </div>
+                    <!-- /Список диалогов -->
+
+                </div>
+                <!-- Диалоги -->
+
+                <!-- Отдельный диалог -->
+                <div class="dialog-detailed">
+
+                    <!-- Шапка диалога -->
+                    <div class="dialog-detailed__header">
+                        <div class="dialog-detailed__header-heading">
+                            <div class="dialog-detailed__header-heading-title">Диалог 1</div>
+                            <div class="dialog-detailed__header-heading-ago">открыт 5 минут назад</div>
+                        </div>
+                        <div class="dialog-detailed__header-icons">
+                            <a href="#" class="dialog-detailed__header-icons-icon">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="dialog-detailed__header-icons-icon">
+                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- /Шапка диалога -->
+
+                    <div>
+                        <!-- Сообщения диалога -->
+                        <div class="dialog-detailed__messages">
+                            <div class="dialog-detailed__messages-item dialog-detailed__messages-item-outgoing dialog-detailed__messages-item-read">
+                                <div class="dialog-detailed__messages-item-content">
+                                    Нужна операция
+                                </div>
+                            </div>
+                            <div class="dialog-detailed__messages-item dialog-detailed__messages-item-incoming">
+                                <div class="dialog-detailed__messages-item-content">
+                                    Вы уверены?
+                                </div>
+                            </div>
+                            <div class="dialog-detailed__messages-item dialog-detailed__messages-item-outgoing dialog-detailed__messages-item-read">
+                                <div class="dialog-detailed__messages-item-content">
+                                    На 100% необходимо
+                                </div>
+                            </div>
+                            <div class="dialog-detailed__messages-item dialog-detailed__messages-item-incoming">
+                                <div class="dialog-detailed__messages-item-content">
+                                    Ок
+                                </div>
+                            </div>
+                            <div class="dialog-detailed__messages-item dialog-detailed__messages-item-outgoing dialog-detailed__messages-item-sent">
+                                <div class="dialog-detailed__messages-item-content">
+                                    Операция проведена?
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Сообщения диалога -->
+
+                        <!-- Новое сообщение -->
+                        <div class="dialog-detailed__new-message">
+                            <div class="dialog-detailed__new-message-icons">
+                                <a href="#" class="dialog-detailed__header-icons-icon">
+                                    <i class="fa fa-picture-o" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="dialog-detailed__header-icons-icon">
+                                    <i class="fa fa-plus-square-o" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="dialog-detailed__new-message-text">
+                                <textarea class="dialog-detailed__new-message-text-textarea" rows="3" placeholder="..."></textarea>
+                            </div>
+                            <div class="dialog-detailed__new-message-send">
+                                <a href="#" class="dialog-detailed__new-message-send-icon">
+                                    <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- /Новое сообщение -->
+                    </div>
+
+                </div>
+                <!-- /Отдельный диалог -->
+
+            </div>
+            <!-- /Интерфейс диалогов -->
+
+        </div>
+
+        <script src="js/script.js"></script>
+
+    </body>
+
+</html>
