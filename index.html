@@ -11,8 +11,6 @@
 
     <body>
 
-        <div class="container">
-
             <!-- Интерфейс диалогов -->
             <div class="dialogs-interface">
 
@@ -106,6 +104,30 @@
                                 Бла бла бла
                             </div>
                         </a>
+                        <a href="#" class="dialogs__list-item">
+                            <div class="dialogs__list-item-header">
+                                Диалог 10
+                            </div>
+                            <div class="dialogs__list-item-last-message">
+                                Бла бла бла
+                            </div>
+                        </a>
+                        <a href="#" class="dialogs__list-item">
+                            <div class="dialogs__list-item-header">
+                                Диалог 11
+                            </div>
+                            <div class="dialogs__list-item-last-message">
+                                Бла бла бла
+                            </div>
+                        </a>
+                        <a href="#" class="dialogs__list-item">
+                            <div class="dialogs__list-item-header">
+                                Диалог 12
+                            </div>
+                            <div class="dialogs__list-item-last-message">
+                                Бла бла бла
+                            </div>
+                        </a>
                     </div>
                     <!-- /Список диалогов -->
 
@@ -132,34 +154,94 @@
                     </div>
                     <!-- /Шапка диалога -->
 
-                    <div>
                         <!-- Сообщения диалога -->
-                        <div class="dialog-detailed__messages">
+                        <div class="dialog-detailed__messages" id="dialog-detailed__messages">
                             <div class="dialog-detailed__messages-item dialog-detailed__messages-item-outgoing dialog-detailed__messages-item-read">
                                 <div class="dialog-detailed__messages-item-content">
-                                    Нужна операция
+                                    <div class="dialog-detailed__messages-item-content-text">
+                                        Нужна операция
+                                    </div>
                                 </div>
                             </div>
                             <div class="dialog-detailed__messages-item dialog-detailed__messages-item-incoming">
                                 <div class="dialog-detailed__messages-item-content">
-                                    Вы уверены?
+                                    <div class="dialog-detailed__messages-item-content-text">
+                                        Вы уверены?
+                                    </div>
                                 </div>
                             </div>
                             <div class="dialog-detailed__messages-item dialog-detailed__messages-item-outgoing dialog-detailed__messages-item-read">
                                 <div class="dialog-detailed__messages-item-content">
-                                    На 100% необходимо
+                                    <div class="dialog-detailed__messages-item-content-text">
+                                        На 100% необходимо
+                                    </div>
                                 </div>
                             </div>
                             <div class="dialog-detailed__messages-item dialog-detailed__messages-item-incoming">
                                 <div class="dialog-detailed__messages-item-content">
-                                    Ок
+                                    <div class="dialog-detailed__messages-item-content-text">
+                                        Ок
+                                    </div>
                                 </div>
                             </div>
-                            <div class="dialog-detailed__messages-item dialog-detailed__messages-item-outgoing dialog-detailed__messages-item-sent">
+                            <div class="dialog-detailed__messages-item dialog-detailed__messages-item-outgoing dialog-detailed__messages-item-read">
                                 <div class="dialog-detailed__messages-item-content">
-                                    Операция проведена?
+                                    <div class="dialog-detailed__messages-item-content-text">
+                                        Операция проведена?
+                                    </div>
                                 </div>
                             </div>
+                            <div class="dialog-detailed__messages-item dialog-detailed__messages-item-outgoing dialog-detailed__messages-item-read">
+                                <div class="dialog-detailed__messages-item-content">
+                                    <div class="dialog-detailed__messages-item-content-text">
+                                        Проведена или нет?
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dialog-detailed__messages-item dialog-detailed__messages-item-incoming">
+                                <div class="dialog-detailed__messages-item-content">
+                                    <div class="dialog-detailed__messages-item-content-text">
+                                        Да! Дошиваем! Даже чай не пошли пить :)
+                                    </div>
+                                    <img class="dialog-detailed__messages-item-content-image" src="img/chat01.jpg" alt="Изображение в чате">
+                                </div>
+                            </div>
+                            <div class="dialog-detailed__messages-item dialog-detailed__messages-item-incoming">
+                                <div class="dialog-detailed__messages-item-content">
+                                    <img class="dialog-detailed__messages-item-content-image" src="img/chat02.jpg" alt="Изображение в чате">
+                                </div>
+                            </div>
+                            <div class="dialog-detailed__messages-item dialog-detailed__messages-item-incoming">
+                                <div class="dialog-detailed__messages-item-content">
+                                    <div class="dialog-detailed__messages-item-content-text">
+                                        Переводим его к вам.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dialog-detailed__notification">
+                                <div class="dialog-detailed__notification-content">
+                                    <div class="dialog-detailed__notification-title">
+                                        Новое событие
+                                    </div>
+                                    <div class="dialog-detailed__notification-text">
+                                        Перевод в ЛОКБ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dialog-detailed__messages-item dialog-detailed__messages-item-outgoing">
+                                <div class="dialog-detailed__messages-item-content">
+                                    <div class="dialog-detailed__messages-item-content-form">
+                                        <select class="dialog-detailed__messages-item-content-select" name="" id="">
+                                            <option value="">Выберите действие</option>
+                                            <option value="">Принять пациента</option>
+                                            <option value="">Отклонить пациента</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
                         </div>
                         <!-- /Сообщения диалога -->
 
@@ -183,15 +265,12 @@
                             </div>
                         </div>
                         <!-- /Новое сообщение -->
-                    </div>
 
                 </div>
                 <!-- /Отдельный диалог -->
 
             </div>
             <!-- /Интерфейс диалогов -->
-
-        </div>
 
         <script src="js/script.js"></script>
 

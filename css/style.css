@@ -12,10 +12,10 @@
 }
 
 .dialogs-interface{
+    width: 100%;
+    height: 100vh;
     display: flex;
     flex-flow: row;
-    border-radius: 10px;
-    overflow: hidden;
     font-size: 16px;
     font-family: Roboto, Arial, sans-serif;
     box-shadow: 3px 2px 3px 2px rgba(0, 0, 0, .1);
@@ -24,11 +24,13 @@
 
 /* Диалоги */
 .dialogs{
-    flex: .35;
+    flex: .2;
     display: flex;
     flex-flow: column;
     background-color: #019ad6;
     color: #fff;
+    height: 100vh;
+    overflow-y: scroll;
 }
 
 /* Шапка диалогов */
@@ -97,11 +99,13 @@
 
 /* Отдельный диалог */
 .dialog-detailed{
-    flex: .65;
+    flex: .8;
     background-color: #f4f4f4;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
+    height: 100vh;
+    overflow: hidden;
 }
 
 /* Шапка диалога */
@@ -147,6 +151,8 @@
 /* Сообщения диалога */
 .dialog-detailed__messages{
     padding: 25px;
+    overflow-y: scroll;
+    flex: 1;
 }
 
 .dialog-detailed__messages-item:not(:first-child):not(:last-child){
@@ -204,6 +210,48 @@
     box-shadow: 0 0 7px 3px rgba(0, 0, 0, .1);
     border-radius: 5px;
     position: relative;
+}
+
+.dialog-detailed__messages-item-content-text{
+
+}
+
+.dialog-detailed__messages-item-content-image{
+    border-radius: 5px;
+}
+
+.dialog-detailed__notification{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.dialog-detailed__notification-content{
+    padding: 15px 20px;
+    background-color: #019ad6;
+    color: #fff;
+    display: inline-block;
+    box-shadow: 0 0 7px 3px rgba(0, 0, 0, .1);
+    border-radius: 5px;
+}
+
+.dialog-detailed__notification-title{
+    font-size: 24px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.dialog-detailed__notification-text{
+    font-size: 18px;
+}
+
+.dialog-detailed__messages-item-content-select{
+    padding: 10px 20px;
+    outline: none;
+}
+
+dialog-detailed__messages-item-content-select option{
+    padding: 10px;
 }
 /* /Сообщения диалога */
 
