@@ -48,8 +48,9 @@
 }
 
 .frame-dialogs__header-toggle-menu{
-    font-size: 28px;
+    font-size: 22px;
     color: #fff;
+    cursor: pointer;
 }
 
 .frame-dialogs__header-search{
@@ -89,7 +90,7 @@
 }
 
 .frame-dialogs__list-item-header{
-    font-size: 24px;
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
@@ -119,12 +120,12 @@
 
 .frame-settings__header-icon-arrow{
     color: #fff;
-    font-size: 24px;
+    font-size: 22px;
     text-decoration: none;
 }
 
 .frame-settings__header-title{
-    font-size: 32px;
+    font-size: 22px;
     font-weight: bold;
     margin-left: 20px;
 }
@@ -147,7 +148,7 @@
 }
 
 .frame-settings__list-item-header{
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .frame-settings__list-item-last-message{
@@ -162,7 +163,76 @@
 .frame-settings__footer-item a{
     text-decoration: none;
     color: #fff;
+    font-size: 18px;
+}
+/* /Фрейм настроек */
+
+/* Фрейм профиля */
+.frame-profile{
+    display: none;
+    flex-flow: column;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+.frame-profile__header{
+    padding: 25px;
+    display: flex;
+}
+
+.frame-profile__header-icon{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.frame-profile__header-icon-arrow{
+    color: #fff;
     font-size: 22px;
+    text-decoration: none;
+}
+
+.frame-profile__header-title{
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.frame-profile__user{
+    padding: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.frame-profile__user-image{
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.frame-profile__user-title{
+    font-size: 20px;
+}
+
+.frame-profile__contacts{
+    padding: 25px;
+    display: flex;
+    flex-flow: column;
+}
+
+.frame-profile__contacts-item{
+
+}
+
+.frame-profile__list-contacts-item-header{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.frame-profile__list-contacts-item-value{
+    font-size: 16px;
+    color: #e2ffff;
 }
 /* /Фрейм настроек */
 
@@ -195,7 +265,7 @@
 
 .dialog-detailed__header-heading-title{
     color: #576163;
-    font-size: 36px;
+    font-size: 32px;
     font-weight: bold;
     margin-bottom: 5px;
 }
@@ -212,10 +282,11 @@
 }
 
 .dialog-detailed__header-icons-icon{
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 300;
     color: #707578;
     text-decoration: none;
+    cursor: pointer;
 }
 /* /Шапка диалога */
 
