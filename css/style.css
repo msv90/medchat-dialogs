@@ -44,7 +44,7 @@
     flex-flow: row;
     justify-content: space-between;
     align-items: center;
-    padding: 25px;
+    padding: 15px;
 }
 
 .frame-dialogs__header-toggle-menu{
@@ -58,7 +58,7 @@
 }
 
 .frame-dialogs__header-search-field{
-    padding: 15px;
+    padding: 12px;
     border-radius: 10px;
     background-color: #52a3db;
     border: 0;
@@ -352,6 +352,12 @@
     box-shadow: 0 0 7px 3px rgba(0, 0, 0, .1);
     border-radius: 5px;
     position: relative;
+}
+
+.dialog-detailed__messages-item-content-author{
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #019ad6;
 }
 
 .dialog-detailed__messages-item-content-text{
