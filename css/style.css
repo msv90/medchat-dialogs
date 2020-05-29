@@ -33,8 +33,13 @@
     overflow-y: scroll;
 }
 
-/* Шапка диалогов */
-.dialogs__header{
+/* Фрейм диалогов */
+.frame-dialogs{
+    display: flex;
+    flex-flow: column;
+}
+
+.frame-dialogs__header{
     display: flex;
     flex-flow: row;
     justify-content: space-between;
@@ -42,16 +47,16 @@
     padding: 25px;
 }
 
-.dialogs__header-toggle-menu{
-    font-size: 32px;
+.frame-dialogs__header-toggle-menu{
+    font-size: 28px;
     color: #fff;
 }
 
-.dialogs__header-search{
+.frame-dialogs__header-search{
     flex: .9;
 }
 
-.dialogs__header-search-field{
+.frame-dialogs__header-search-field{
     padding: 15px;
     border-radius: 10px;
     background-color: #52a3db;
@@ -61,17 +66,15 @@
     outline: #177aa3;
 }
 
-.dialogs__header-search-field::placeholder{
+.frame-dialogs__header-search-field::placeholder{
     color: #fff;
 }
-/* /Шапка диалогов */
 
-/* Список диалогов */
-.dialogs__list{
+.frame-dialogs__list{
     padding-bottom: 10px;
 }
 
-.dialogs__list-item{
+.frame-dialogs__list-item{
     display: block;
     padding: 15px 0;
     color: #fff;
@@ -80,20 +83,88 @@
     padding: 15px 25px;
 }
 
-.dialogs__list-item:hover,
-.dialogs__list-item_active{
+.frame-dialogs__list-item:hover,
+.frame-dialogs__list-item_active{
     background-color: #177aa3;
 }
 
-.dialogs__list-item-header{
-    font-size: 28px;
+.frame-dialogs__list-item-header{
+    font-size: 24px;
     margin-bottom: 10px;
 }
 
-.dialogs__list-item-last-message{
+.frame-dialogs__list-item-last-message{
     color: #e2ffff
 }
-/* /Список диалогов */
+/* /Фрейм диалогов */
+
+/* Фрейм настроек */
+.frame-settings{
+    display: none;
+    flex-flow: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.frame-settings__header{
+    padding: 25px;
+    display: flex;
+}
+
+.frame-settings__header-icon{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.frame-settings__header-icon-arrow{
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.frame-settings__header-title{
+    font-size: 32px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.frame-settings__list{
+    padding-bottom: 10px;
+}
+
+.frame-settings__list-item{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    transition: all linear .3s;
+    padding: 15px 25px;
+}
+
+.frame-settings__list-item:hover,
+.frame-settings__list-item_active{
+    background-color: #177aa3;
+}
+
+.frame-settings__list-item-header{
+    font-size: 22px;
+}
+
+.frame-settings__list-item-last-message{
+    color: #e2ffff
+}
+
+.frame-settings__footer-item{
+    padding: 15px 25px;
+    color: #fff;
+}
+
+.frame-settings__footer-item a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+}
+/* /Фрейм настроек */
 
 /* /Диалоги */
 
