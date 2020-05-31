@@ -251,7 +251,7 @@
 
 /* Шапка диалога */
 .dialog-detailed__header{
-    padding: 25px;
+    padding: 15px 25px;
     display: flex;
     flex-flow: row;
     justify-content: space-between;
@@ -265,13 +265,14 @@
 
 .dialog-detailed__header-heading-title{
     color: #576163;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: bold;
     margin-bottom: 5px;
 }
 
 .dialog-detailed__header-heading-ago{
     color: #606163;
+    font-size: 14px;
 }
 
 .dialog-detailed__header-icons{
@@ -364,6 +365,11 @@
 
 }
 
+.dialog-detailed__messages-item-content-time{
+    font-size: 14px;
+    margin-top: 8px;
+}
+
 .dialog-detailed__messages-item-content-image{
     border-radius: 5px;
 }
@@ -393,6 +399,11 @@
     font-size: 18px;
 }
 
+.dialog-detailed__notification-time{
+    font-size: 14px;
+    margin-top: 8px;
+}
+
 .dialog-detailed__messages-item-content-select{
     padding: 10px 20px;
     outline: none;
@@ -412,6 +423,7 @@ dialog-detailed__messages-item-content-select option{
     padding: 25px;
     color: #576163;
     border-top: 4px solid #e8e8e8;
+    position: relative;
 }
 
 .dialog-detailed__new-message-icons{
@@ -420,6 +432,15 @@ dialog-detailed__messages-item-content-select option{
 
 .dialog-detailed__new-message-icons-icon{
 
+}
+
+.dialog-detailed__new-message-icons-form{
+    display: none;
+    width: 150px;
+    height: 20px;
+    position: absolute;
+    left: 25px;
+    top: 0;
 }
 
 .dialog-detailed__new-message-text{

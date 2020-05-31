@@ -31,3 +31,10 @@ arrowBackProfile.addEventListener('click', function() {
     frameProfile.style.display = "none";
     frameSettings.style.display = "flex";
 });
+
+/* Селект при нажатиии на иконку плюс */
+let iconPlus = document.querySelector('#dialog-detailed__header-icons-icon-plus');
+let iconPlusForm = document.querySelector('#dialog-detailed__header-icons-form');
+iconPlus.addEventListener('click', function() {
+    iconPlusForm.style.display = "block";
+});
