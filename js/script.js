@@ -32,9 +32,15 @@ arrowBackProfile.addEventListener('click', function() {
     frameSettings.style.display = "flex";
 });
 
-/* Селект при нажатиии на иконку плюс */
+/* Список событий при нажатиии на иконку плюс */
 let iconPlus = document.querySelector('#dialog-detailed__header-icons-icon-plus');
-let iconPlusForm = document.querySelector('#dialog-detailed__header-icons-form');
+let eventsList = document.querySelector('#dialog-detailed__new-message-icons-event-list');
+let eventsItemsClickable = document.querySelectorAll('.dialog-detailed__new-message-events-item:not(:first-child)');
 iconPlus.addEventListener('click', function() {
-    iconPlusForm.style.display = "block";
+    eventsList.style.display = "flex";
+});
+eventsItemsClickable.forEach(element => {
+    element.addEventListener('click', function() {
+        eventsList.style.display = "none";
+    })
 });

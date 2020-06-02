@@ -403,15 +403,6 @@
     font-size: 14px;
     margin-top: 8px;
 }
-
-.dialog-detailed__messages-item-content-select{
-    padding: 10px 20px;
-    outline: none;
-}
-
-dialog-detailed__messages-item-content-select option{
-    padding: 10px;
-}
 /* /Сообщения диалога */
 
 /* Новое сообщение */
@@ -434,13 +425,27 @@ dialog-detailed__messages-item-content-select option{
 
 }
 
-.dialog-detailed__new-message-icons-form{
+.dialog-detailed__new-message-events-list{
     display: none;
-    width: 150px;
-    height: 20px;
+    flex-flow: column;
     position: absolute;
     left: 25px;
-    top: 0;
+    top: -110%;
+    transition: all linear .3s;
+}
+
+.dialog-detailed__new-message-events-item{
+    list-style-type: none;
+    padding: 10px;
+    border: 1px solid #576163;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dialog-detailed__new-message-events-item:first-child{
+    background: #576163;
+    color: #ffffff;
+    cursor: inherit;
 }
 
 .dialog-detailed__new-message-text{
@@ -468,3 +473,13 @@ dialog-detailed__messages-item-content-select option{
 /* /Новое сообщение */
 
 /* /Отдельный диалог */
+
+
+/*.dialog-detailed__messages-item-content-select{*/
+/*    padding: 10px 20px;*/
+/*    outline: none;*/
+/*}*/
+
+/*dialog-detailed__messages-item-content-select option{*/
+/*    padding: 10px;*/
+/*}*/
